@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            
+        }
+        .top {
+            background-color: black;
+            height: 40px;
+            width: 100%;
+            color:white;
+            padding: 5px;
+            line-height: 3;
+        }
+
+        .navbar {
+            height: 40px;
+            width: 100%;
+            padding: 20px;
+            background-color: rgb(235, 244, 244);
+            color: white;
+            font-size: 20px;
+            z-index: 1;
+
+         }
+    .home {
+            margin-left: 900px;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+        }
+    .same {
+            margin-left: 30px;
+        }
+    .drop1 {
+            display: none;
+            background-color: black;
+            color: white;
+           }
+
+        .news:hover .drop1
+         {
+            display: block;
+        }
+
+        .image img
+         {
+            height: 700px;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .grid 
+        {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-left: 100px;
+            gap: 20px;
+            margin-top: 50px;
+            opacity: 0.7;
+        }
+    .grid img 
+        {
+            height: 200px;
+            width: 200px;
+        }
+
+        .grid1 
+        {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            padding: 50px;
+            gap: 30px;
+            margin-top: 100px;
+            background-color: #5a6f80;
+            width: 100%;
+            color: white;
+        }
+
+        .grid1 img
+         {
+            width: 650px;
+            float: right;
+            object-fit: cover;
+        }
+
+        .img1 
+        {
+            grid-row: span 2;
+        }
+
+        .img2 
+        {
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+
+        .sandy
+         {
+            display: grid;
+            grid-template-columns: auto auto;
+            object-fit: cover;
+            padding: 50px;
+            gap: 50px;
+            margin-left: 300px;
+            font-size: 20px;
+        }
+
+        .save 
+        {
+            background-image: url("backimg.jpg");
+            height: 50px;
+            width: 100%;
+            display: inline-flex;
+            gap: 50px;
+            padding: 100px;
+        }
+    .sames
+     {
+            margin-left: 300px;
+            animation-name: make ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+    }
+    @keyframes make{
+        from{
+
+        }
+        to{
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9abdd4, 0 0 40px #c4a1b2, 0 0 50px #b4a1aa, 0 0 60px #3e454a, 0 0 70px #32363a;
+}
+        }
+    
+    .samee{
+        margin-left: 300px;
+    }
+
+        .grid3
+         {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 30px;
+            gap: 30px;
+            background-color: #F6F8FF;
+            width: 100%;
+            opacity: 0.8;
+        }
+
+        .grid3 img 
+        {
+            height: 400px;
+            width: 430px;
+        }
+
+        .ssp 
+        {
+            margin-left: 80px;
+            font-size: 30px;
+            color: #263241;
+        }
+
+        .ssp1 
+        {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+        .donate 
+        {
+            font-size: 30px;
+            width: 430px;
+            background-color: #263241;
+            border-top: white;
+            border-color: azure;
+            color: white;
+            border-radius: 10px;
+        }
+
+        form 
+        {
+            padding: 50px;
+
+        }
+
+        .grid4
+         {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: #4c5e6c;
+            gap: 40px;
+            padding: 50px;
+            margin-top: 100px;
+        }
+
+        .form1 img 
+        {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            margin-left: 30px;
+        }
+
+        .table1 
+        {
+            margin-left: 200px;
+            background-color: white;
+            padding: 10px;
+            color: black;
+            width: 500px;
+            opacity: 0.9;
+            border-radius: 20px;
+        }
+
+        .same1
+         {
+            width: 170px;
+            font-size: 10px;
+            border-radius: 20px;
+            border-color: #DDEDFF;
+            background-color: #f0f8ff;
+            color: rgba(255, 255, 255, 0.79);
+            text-align: left;
+            height: 30px;
+        }
+
+        .grid5 
+        {
+            display: grid;
+            grid-template-columns: auto auto;
+            margin-top: 160px;
+            width: 80%;
+            padding: 50px;
+            gap: 50px;
+            
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .newss 
+        {
+            height: 150px;
+            width: 150px;
+            box-shadow:3px 3px 5px 3px rgb(211, 208, 208);
+        }
+        .mainn 
+        {
+            height: 500px;
+            width: 800px;
+            margin-left: 100px;
+            box-shadow: 5px 5px 5px 5px rgb(109, 106, 106);
+        }
+
+        .btn button 
+        {
+            border-radius: 50px;
+            opacity: 0.8;
+            color: black;
+            background-color: white;
+            border-color: white;
+            margin-left: 10px;
+            padding: 10px;
+        }
+
+        .ww
+         {
+            padding:20px;
+            width: 100%;
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            height: 300px;
+            background-color:hsl(201, 40%, 86%);
+            font-size: 40px;
+           
+        }
+        
+       
+        .img11 
+        {
+            border-radius: 25px;
+            box-shadow: 0px 0px 5px 5px rgb(228, 215, 215);
+        }
+
+        .wave 
+        {
+            margin-top: -330px;
+            position: absolute;
+        }
+
+        .even:hover
+         {
+            height: 250px;
+            width: 250px;
+            box-shadow: 0px 0px 5px 5px rgb(81, 80, 80);
+            border-radius: 25px;
+         }
+
+        .sub 
+        {
+            height: 200px;
+            width: 400px;
+            background-color: #f0f8ff;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0px 0px 5px 5px #1e3430;
+            margin-top: 130px;
+        }
+
+        .animal 
+        {
+            animation-name: example;
+            animation-duration: 4sec;
+            animation-delay: 3sec;
+         }
+        @keyframes lang2 
+        {
+            from {}
+
+            to {
+                color: white;
+            }
+        }
+        .hum 
+        {
+            padding: 30px;
+            font-size: 20px;
+            animation-name: lang2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            color:#597081;
+            animation-delay: 4sec;
+            position:absolute;
+            margin-top:500px;
+            margin-left: 1050px;
+            font-size: 40px;
+            z-index: 1;
+
+        }
+        
+
+        @keyframes lang2 
+        {
+            from {
+                
+
+            }
+
+            to {
+                font-size: 60px;
+                font-stretch: extra-condensed;
+                font-weight:lighter;
+                margin-top:540px;
+                color:#263241;
+            }
+        }
+        .last
+        {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto AUTO;
+            padding: 40px;
+            background-color: #263241;
+            color:white;
+            row-gap: 20px;
+            height: 300px;
+        }
+        .ss1
+        {
+            margin-left:700px;
+        }
+        .ss
+        {
+            margin-left: 30px;
+        }
+        .heart{
+            
+            position: absolute;
+            margin-top: 800px;
+            margin-left: 1000px;
+            z-index: 1;
+        }
+        .food{
+            font-size: 20px;
+            animation-name: food;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        @keyframes food{
+            from{
+
+            }
+            to{
+                margin-top: 100px;
+                position: absolute;
+            }
+        }
+        .e1{
+            color:white;
+            animation-name: happy;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            
+        }
+        @keyframes happy{
+            from{
+
+            }
+            to{
+                margin-top:205px;
+                font-size: 50px;
+                color:black;
+            }
+        }
+        .e2{
+            animation-name: happy1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes happy1{
+            from{
+
+            }
+            to{
+                margin-top:205px;
+                font-size: 50px;
+                color:white;
+            }
+        }
+        
+       
+        
+       
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <span><i class="fa-solid fa-location-dot" style="margin-left: 50px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+            Akershusstranda 20, 0150 Oslo, Norway</span>
+        <span style="margin-left: 50px;"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;info@company.com</span>
+        <i class="fa-solid fa-house ss1"></i>
+        <i class="fa-brands fa-instagram ss"></i>
+        <i class="fa-brands fa-facebook ss"></i>
+        <i class="fa-brands fa-twitter ss"></i>
+    
+    </div>
+    <div class="heart">
+        <img src="heart.jpg">
+        </div>
+    <div class="navbar">
+        <a href="" class="home">Home</a>
+        <a href="" class="same">About</a>
+        <a href="" class="same">Causes</a>
+        <a href="" class="same">Volenteer</a>
+        <a href="" class="news same">News
+            <span class="drop1">
+                <p>News1</p>
+                <p>News2</p>
+            </span>
+        </a>
+
+        <a href="" class="same">Contact</a>
+        <!-- <button>Donate</button> -->
+
+    </div>
+    <div class="hum">
+        <span>Be a Kind Heart</span><br>
+
+    </div>
+    <div class="image">
+        <img src="template1.jpg">
+    </div>
+    
+
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="white" fill-opacity="1" d="M0,288L1440,32L1440,320L0,320Z"></path>
+    </svg>
+    <div style="font-size:40px;color:black;font-weight: 400;margin-left: 480px;margin-top: 100px;">
+        Welcome TO Kind Heart Charity
+    </div>
+    <div class="grid">
+        <img src="one.jpg" class="even">
+        <img src="three.jpg" class="even">
+        <img src="two.jpg" class="even">
+        <img src="four.jpg" class="even">
+
+    </div>
+    <div class="grid1">
+        <div class="img1"><img src="five.jpg"></div>
+        <div class="img2" style="box-shadow: 0px 0px 5px 5px #ffffff3c;width:625px;padding: 25px;"><span style="font-size: 30px;color: #5bc1ac;font-weight: bold;">Our Story</span><br><br><br>
+            <span style="font-size: 20px;color:#5bc1ac;"> Kind Heart Charity, Non-Profit Organization</span><br>
+            This is a Bootstrap 5.2.2 CSS template for charity organization websites.<br> You can feel free to use it.
+            Please tell your friends about TemplateMo<br> website. Thank you. HTML CSS files updated on 20 Oct 2022.
+        </div>
+        <div style="box-shadow: 0px 0px 5px 5px #ffffff3c;padding:25px;">
+            Our Mission<br>
+            Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus<br>
+
+            Charity Theme
+            Semantic HTML
+        </div>
+        <div style="box-shadow: 0px 0px 5px 5px #ffffff3c;padding:25px;">
+            Our Mission<br>
+            Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus<br>
+
+            Charity Theme
+            Semantic HTML
+        </div>
+    </div>
+    <div class="sandy">
+        <div> <img src="sandy.jpg" style="height:400px;width:400px;" class="img11"></div>
+        <div><span style="font-size: 30px;">Sandy Chan</span><br><br>
+            Co-Founding Partner<br><br>
+
+            Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity theme
+            based<br><br>
+
+            You are not allowed to redistribute this template ZIP file on any other template collection website.
+            Please contact TemplateMo for more information.
+        </div>
+    </div>
+    <div class="save">
+        <div class="sames1"
+            style="font-size: 35px;color:#263241;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Make An
+            Imapct.<br>Save Lives.</div>
+        <div class="sames" style="font-weight: bold;font-size: 25px;">Make donation</div>
+        <div class="samee""><button style=" width:200px;font-size:20px;background-color:transparent;border-radius:
+            25px;border-color:white;height:45px;padding: 10px;">Become Volenteer</button></div>
+
+    </div>
+    <div class="six" style=" margin-top: 50px;margin-left: 650px;font-size: 40px;font-weight: bold;color:#394853;">
+        OUR CAUSES
+    </div>
+    <br>
+    <div class="grid3">
+        <div><img src="cause1.jpg" style="object-fit: cover;" class="img11"><br><span class="ssp">Children
+                Education</span><br><br>
+            <span class="ssp1">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</span>
+            <br><br><button class="donate">Donate Now</button>
+        </div>
+        <div><img src="cause2.jpg" style="object-fit: cover;" class="img11"><br><span class="ssp">Poverty
+                Development</span><br><br>
+            <span class="ssp1">Sed leo nisl, posuere at molestie ac,suscipit auctor mauris.Etiam quis metus
+                tempor</span>
+            <br><br><button class="donate">Donate Now</button>
+        </div>
+        <div><img src="cause3.jpg" style="object-fit: cover;" class="img11"><br><span class="ssp">Supply drinking
+                water</span><br><br>
+            <span class="ssp1">Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                ridiculus</span>
+            <br><br><button class="donate">Donate Now</button>
+        </div>
+
+    </div>
+    <div class="grid4">
+        <table class="table1" style="text-align:center;">
+            <tr colspan="2">
+                <th style="color:black;text-align: center;font-size: 30px;" colspan="2">Become Volenteer</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="same1" placeholder="Jack Deo"></td>
+                <td><input type="email" class="same1" placeholder="jackdeo@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="same1" placeholder="Subject"></td>
+                <td><input type="email" class="same1" placeholder="Upload cv"></td>
+            </tr>
+            <tr>
+                <td> <input type="password" class="same1" placeholder="password"></td>
+                <td><input type="password" class="same1" placeholder=" confirm password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button
+                        style="border-radius: 100px;width:300px;font-size:25px;color:white;background-color:#5a6f80;">Submit</button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="form1">
+            <img src="form1.jpg"><br>
+            <span style="font-size: 40px;color:white;margin-left: 10px;">About Volunteering</span><br>
+            <span style="color:white;margin-left: 40px;text-align: justify;">Lorem Ipsum dolor sit amet,consectetur<br><span
+                    style="color:white;margin-left: 40px;text-align: justify;"></span>adipsicing kengan omeg kohm
+                tokito<br><span style="color:white;margin-left: 40px;text-align: justify;"></span> Professional charity theme
+                based</span><br>
+        </div>
+    </div>
+    <div class="grid5">
+        <div><img src="news.jpg" class=mainn></div>
+        <div><button placeholder="search"
+                style="font-size:15px;height:40px;background-color:white;color:black;text-align:left;width:300px;border-radius: 100px;opacity:0.6;">search</button><br><br><br>
+            <span style="font-size: 35px;color:black;font-weight: bold;">Recent News</span><br><br>
+            <span><img src="news1.jpg" class=newss></span><span
+                style="font-size: 20px;font-weight: bold;margin-left: 30px;" class="food">Food Donation
+                Area<br><i class="fa-regular fa-calendar-days" class="date"></i>23/08/2000</span><br><br>
+            <span><img src="news2.jpg" class=newss><span
+                    style="font-size: 20px;font-weight: bold;margin-left: 30px;"class="food">Volunteering
+                    Clean<br><i class="fa-regular fa-calendar-days" class="date"></i>23/08/2000</span></span><br><br>
+        </div>
+        <div>
+            <br><br>
+            <span style="font-size: 20px;font-weight: bolder;">Clothing Donation To Urban Area</span><br><br>
+            <span>LoremIpsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional charity
+                theme based on Bootstrap</span>
+            <br><br><br><img src="nn.jpg" class="mainn">
+        </div>
+        <div>
+            <br><br>
+            <span style="font-size: 35px;font-weight: bolder;margin-left: 30px;">Tags</span><br><br><br>
+            <div class=btn style="padding: 10px;">
+                <button>Donation</button>
+                <button>Clothing</button>
+                <button>Food</button>
+                <button>Children</button><br><br>
+                <button>Poverty</button>
+                <button>Education</button>
+                <button>Poverty</button>
+            </div>
+            <div class="sub">
+                <span style="font-size: 30px;font-weight: bold;color:#5bc1ac;">Newsletter Form</span><br>
+                <button style="margin-top: 20px;width:300px;height:40px;text-align: left;background:#ffffff;">Email
+                    Address</button><br>
+                <button
+                    style="margin-top: 40px;width:300px;height:45px;text-align:center;color:white;background:#597081;border-radius: 100px;">Subscribe</button>
+
+            </div>
+
+        </div>
+    </div>
+    <br>
+   <div class="ww">
+       <div class="e1 nn nn1">H</div>
+       <div class="e2 nn1">a</div>
+       <div class="e1 nn1">p</div>
+       <div class="e2 nn1">p</div>
+       <div class="e1 nn1">y</div>
+       <div class="e2 nn1">C</div>
+       <div class="e1 nn1">U</div>
+       <div class="e2 nn1">S</div>
+       <div class="e1 nn1">T</div>
+       <div class="e2 nn1">O</div>
+       <div class="e1 nn1">M</div>
+       <div class="e2 nn1">E</div>
+       <div class="e1 nn1">R</div>
+       
+    </div>
+    <div class="last">
+        <div><img src="logo.jpg" STYLE="height:50px;width:50px;"></div>
+        <div style="font-size: 25px;color:#5bc1ac">Quick Links</div>
+        <div></div>
+        <div style="font-size: 25px; color:#5bc1ac">Contact Information</div>
+        <div></div>
+        <div>our story</div>
+        <div>Become Volenteer</div>
+        <div>120-240-9600</div>
+        <div></div>
+        <div>Newsroom</div>
+        <div>Partener With Us</div>
+        <div>Donate charity</div>
+        <div></div>
+        <div>Causes</div>
+        <div></div>
+        <div>bhushpatil369@gmail.com</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><button style="height:30px;border-radius:50px;background-color:transparent;color:white;width:150px;font-size: 15px;">Get Diarection</div>
+</div>
+</body>
+</html>
+ <!-- <div style="margin-top:50px;margin-left:350px;font-size: 30px;" class="animal">"Sed leo nisl, posuere at 
+            molestie ac,
+            suscipit auctor mauris quis<br>metus tempor orci
+            Thomas, Partner"</div>-->
+            
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/0SCyU_4KoFY" title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     allowfullscreen></iframe> -->
+          
